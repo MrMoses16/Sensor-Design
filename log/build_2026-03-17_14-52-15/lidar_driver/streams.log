@@ -1,0 +1,28 @@
+[2.027s] Invoking command in '/home/krist/sensor2_ws/src/lidar_driver': PYTHONPATH=/home/krist/sensor2_ws/build/lidar_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_driver build --build-base /home/krist/sensor2_ws/build/lidar_driver/build install --record /home/krist/sensor2_ws/build/lidar_driver/install.log --single-version-externally-managed install_data
+[2.601s] /home/krist/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.602s]   warnings.warn(msg)
+[2.927s] running egg_info
+[2.990s] writing ../../build/lidar_driver/lidar_driver.egg-info/PKG-INFO
+[2.991s] writing dependency_links to ../../build/lidar_driver/lidar_driver.egg-info/dependency_links.txt
+[2.991s] writing entry points to ../../build/lidar_driver/lidar_driver.egg-info/entry_points.txt
+[2.992s] writing requirements to ../../build/lidar_driver/lidar_driver.egg-info/requires.txt
+[2.992s] writing top-level names to ../../build/lidar_driver/lidar_driver.egg-info/top_level.txt
+[3.100s] reading manifest file '../../build/lidar_driver/lidar_driver.egg-info/SOURCES.txt'
+[3.103s] writing manifest file '../../build/lidar_driver/lidar_driver.egg-info/SOURCES.txt'
+[3.104s] running build
+[3.104s] running build_py
+[3.104s] copying lidar_driver/mini_fence_node.py -> /home/krist/sensor2_ws/build/lidar_driver/build/lib/lidar_driver
+[3.106s] copying lidar_driver/__init__.py -> /home/krist/sensor2_ws/build/lidar_driver/build/lib/lidar_driver
+[3.107s] running install
+[3.119s] running install_lib
+[3.188s] running install_data
+[3.190s] copying resource/lidar_driver -> /home/krist/sensor2_ws/install/lidar_driver/share/ament_index/resource_index/packages
+[3.191s] copying package.xml -> /home/krist/sensor2_ws/install/lidar_driver/share/lidar_driver
+[3.192s] creating /home/krist/sensor2_ws/install/lidar_driver/share/lidar_driver/launch
+[3.193s] copying launch/mini_fence.launch.py -> /home/krist/sensor2_ws/install/lidar_driver/share/lidar_driver/launch
+[3.194s] running install_egg_info
+[3.257s] Copying ../../build/lidar_driver/lidar_driver.egg-info to /home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages/lidar_driver-0.0.0-py3.10.egg-info
+[3.260s] running install_scripts
+[3.718s] Installing mini_fence_node script to /home/krist/sensor2_ws/install/lidar_driver/lib/lidar_driver
+[3.722s] writing list of installed files to '/home/krist/sensor2_ws/build/lidar_driver/install.log'
+[3.838s] Invoked command in '/home/krist/sensor2_ws/src/lidar_driver' returned '0': PYTHONPATH=/home/krist/sensor2_ws/build/lidar_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_driver build --build-base /home/krist/sensor2_ws/build/lidar_driver/build install --record /home/krist/sensor2_ws/build/lidar_driver/install.log --single-version-externally-managed install_data

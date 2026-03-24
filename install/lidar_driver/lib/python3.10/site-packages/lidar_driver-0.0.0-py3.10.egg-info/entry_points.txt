@@ -1,0 +1,2 @@
+[console_scripts]
+mini_fence_node = lidar_driver.mini_fence_node:main

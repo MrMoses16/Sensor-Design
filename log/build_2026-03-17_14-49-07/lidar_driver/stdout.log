@@ -1,0 +1,24 @@
+running egg_info
+creating ../../build/lidar_driver/lidar_driver.egg-info
+writing ../../build/lidar_driver/lidar_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/lidar_driver/lidar_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/lidar_driver/lidar_driver.egg-info/entry_points.txt
+writing requirements to ../../build/lidar_driver/lidar_driver.egg-info/requires.txt
+writing top-level names to ../../build/lidar_driver/lidar_driver.egg-info/top_level.txt
+writing manifest file '../../build/lidar_driver/lidar_driver.egg-info/SOURCES.txt'
+reading manifest file '../../build/lidar_driver/lidar_driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/lidar_driver/lidar_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/krist/sensor2_ws/build/lidar_driver/build/lib/lidar_driver
+copying lidar_driver/mini_fence_node.py -> /home/krist/sensor2_ws/build/lidar_driver/build/lib/lidar_driver
+copying lidar_driver/__init__.py -> /home/krist/sensor2_ws/build/lidar_driver/build/lib/lidar_driver
+running install
+running install_lib
+creating /home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages/lidar_driver
+copying /home/krist/sensor2_ws/build/lidar_driver/build/lib/lidar_driver/mini_fence_node.py -> /home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages/lidar_driver
+copying /home/krist/sensor2_ws/build/lidar_driver/build/lib/lidar_driver/__init__.py -> /home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages/lidar_driver
+byte-compiling /home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages/lidar_driver/mini_fence_node.py to mini_fence_node.cpython-310.pyc
+byte-compiling /home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages/lidar_driver/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/krist/sensor2_ws/install/lidar_driver/share/ament_index/resource_index/packages

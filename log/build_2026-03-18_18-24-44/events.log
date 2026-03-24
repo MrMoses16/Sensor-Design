@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.000607] (-) JobUnselected: {'identifier': 'lidar_driver'}
+[0.001083] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.001358] (camera_driver) JobQueued: {'identifier': 'camera_driver', 'dependencies': OrderedDict()}
+[0.001584] (camera_driver) JobStarted: {'identifier': 'camera_driver'}
+[0.099468] (-) TimerEvent: {}
+[0.200041] (-) TimerEvent: {}
+[0.300644] (-) TimerEvent: {}
+[0.401229] (-) TimerEvent: {}
+[0.501854] (-) TimerEvent: {}
+[0.602473] (-) TimerEvent: {}
+[0.703045] (-) TimerEvent: {}
+[0.803665] (-) TimerEvent: {}
+[0.904461] (-) TimerEvent: {}
+[1.005165] (-) TimerEvent: {}
+[1.105899] (-) TimerEvent: {}
+[1.206656] (-) TimerEvent: {}
+[1.307390] (-) TimerEvent: {}
+[1.408157] (-) TimerEvent: {}
+[1.508910] (-) TimerEvent: {}
+[1.609645] (-) TimerEvent: {}
+[1.688765] (camera_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_driver', 'build', '--build-base', '/home/krist/sensor2_ws/build/camera_driver/build', 'install', '--record', '/home/krist/sensor2_ws/build/camera_driver/install.log', '--install-scripts', '$base/lib/camera_driver', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/krist/sensor2_ws/src/camera_driver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'krist', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64:/usr/lib/aarch64-linux-gnu:/usr/local/cuda/targets/aarch64-linux/lib:', 'HOME': '/home/krist', 'OLDPWD': '/home/krist/sensor2_ws/src/camera_driver/camera_driver', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.4.7', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super', 'SYSTEMD_EXEC_PID': '3454', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/krist/sensor2_ws/install:/home/krist/sensor_ws/install:/home/krist/camera_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'krist', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (Developer kit)', 'JETSON_SERIAL_NUMBER': '1423825003941', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'krist', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/krist/.local/bin:/usr/local/cuda/bin:/home/krist/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/krist/Micro-XRCE-DDS-Gen/scripts:/home/krist/.local/bin', 'SESSION_MANAGER': 'local/krist-desktop:@/tmp/.ICE-unix/2764,unix/krist-desktop:/tmp/.ICE-unix/2764', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d17b4df1_cc51_47ca_86f9_01206d751893', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.95', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '22', 'AMENT_PREFIX_PATH': '/home/krist/sensor2_ws/install/sllidar_ros2:/home/krist/sensor2_ws/install/lidar_driver:/home/krist/sensor2_ws/install/camera_driver:/home/krist/sensor_ws/install/lidar_driver:/home/krist/sensor_ws/install/drone_avoidance:/home/krist/camera_ws/install/video_processor:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GZ_VERSION': 'harmonic', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/krist/sensor2_ws/build/camera_driver', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/krist/sensor2_ws/build/camera_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages:/home/krist/sensor2_ws/install/lidar_driver/lib/python3.10/site-packages:/home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages:/home/krist/sensor_ws/install/lidar_driver/lib/python3.10/site-packages:/home/krist/sensor_ws/install/drone_avoidance/lib/python3.10/site-packages:/home/krist/camera_ws/install/video_processor/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/krist/sensor2_ws/install/sllidar_ros2', 'JETSON_P_NUMBER': 'p3767-0005'}, 'shell': False}
+[1.709807] (-) TimerEvent: {}
+[1.810493] (-) TimerEvent: {}
+[1.911068] (-) TimerEvent: {}
+[2.006825] (camera_driver) StderrLine: {'line': b"/home/krist/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.\n"}
+[2.007339] (camera_driver) StderrLine: {'line': b'!!\n'}
+[2.007503] (camera_driver) StderrLine: {'line': b'\n'}
+[2.007638] (camera_driver) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.007764] (camera_driver) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[2.007889] (camera_driver) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[2.008010] (camera_driver) StderrLine: {'line': b'\n'}
+[2.008153] (camera_driver) StderrLine: {'line': b'        This deprecation is overdue, please update your project and remove deprecated\n'}
+[2.008276] (camera_driver) StderrLine: {'line': b'        calls to avoid build errors in the future.\n'}
+[2.008389] (camera_driver) StderrLine: {'line': b'\n'}
+[2.008499] (camera_driver) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[2.008610] (camera_driver) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.008740] (camera_driver) StderrLine: {'line': b'\n'}
+[2.008851] (camera_driver) StderrLine: {'line': b'!!\n'}
+[2.008961] (camera_driver) StderrLine: {'line': b'  opt = self._enforce_underscore(opt, section)\n'}
+[2.011124] (-) TimerEvent: {}
+[2.047297] (camera_driver) StderrLine: {'line': b"/home/krist/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[2.047944] (camera_driver) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[2.111285] (-) TimerEvent: {}
+[2.123048] (camera_driver) StderrLine: {'line': b"/home/krist/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.\n"}
+[2.123394] (camera_driver) StderrLine: {'line': b'!!\n'}
+[2.123542] (camera_driver) StderrLine: {'line': b'\n'}
+[2.123673] (camera_driver) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.123800] (camera_driver) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[2.123924] (camera_driver) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[2.124043] (camera_driver) StderrLine: {'line': b'        (Affected: camera_driver).\n'}
+[2.124195] (camera_driver) StderrLine: {'line': b'\n'}
+[2.124314] (camera_driver) StderrLine: {'line': b'        This deprecation is overdue, please update your project and remove deprecated\n'}
+[2.124429] (camera_driver) StderrLine: {'line': b'        calls to avoid build errors in the future.\n'}
+[2.124543] (camera_driver) StderrLine: {'line': b'\n'}
+[2.124654] (camera_driver) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[2.124766] (camera_driver) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.124877] (camera_driver) StderrLine: {'line': b'\n'}
+[2.124983] (camera_driver) StderrLine: {'line': b'!!\n'}
+[2.125093] (camera_driver) StderrLine: {'line': b'  opt = self._enforce_underscore(opt, section)\n'}
+[2.211413] (-) TimerEvent: {}
+[2.279529] (camera_driver) StdoutLine: {'line': b'running egg_info\n'}
+[2.311501] (-) TimerEvent: {}
+[2.316575] (camera_driver) StdoutLine: {'line': b'writing ../../build/camera_driver/camera_driver.egg-info/PKG-INFO\n'}
+[2.317766] (camera_driver) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_driver/camera_driver.egg-info/dependency_links.txt\n'}
+[2.318284] (camera_driver) StdoutLine: {'line': b'writing entry points to ../../build/camera_driver/camera_driver.egg-info/entry_points.txt\n'}
+[2.318790] (camera_driver) StdoutLine: {'line': b'writing requirements to ../../build/camera_driver/camera_driver.egg-info/requires.txt\n'}
+[2.319071] (camera_driver) StdoutLine: {'line': b'writing top-level names to ../../build/camera_driver/camera_driver.egg-info/top_level.txt\n'}
+[2.398489] (camera_driver) StdoutLine: {'line': b"reading manifest file '../../build/camera_driver/camera_driver.egg-info/SOURCES.txt'\n"}
+[2.401187] (camera_driver) StdoutLine: {'line': b"writing manifest file '../../build/camera_driver/camera_driver.egg-info/SOURCES.txt'\n"}
+[2.401570] (camera_driver) StdoutLine: {'line': b'running build\n'}
+[2.401761] (camera_driver) StdoutLine: {'line': b'running build_py\n'}
+[2.402206] (camera_driver) StdoutLine: {'line': b'copying camera_driver/gst_node.py -> /home/krist/sensor2_ws/build/camera_driver/build/lib/camera_driver\n'}
+[2.402745] (camera_driver) StdoutLine: {'line': b'copying camera_driver/__init__.py -> /home/krist/sensor2_ws/build/camera_driver/build/lib/camera_driver\n'}
+[2.403391] (camera_driver) StdoutLine: {'line': b'running install\n'}
+[2.411573] (-) TimerEvent: {}
+[2.412101] (camera_driver) StdoutLine: {'line': b'running install_lib\n'}
+[2.451021] (camera_driver) StdoutLine: {'line': b'copying /home/krist/sensor2_ws/build/camera_driver/build/lib/camera_driver/gst_node.py -> /home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver\n'}
+[2.452493] (camera_driver) StdoutLine: {'line': b'byte-compiling /home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver/gst_node.py to gst_node.cpython-310.pyc\n'}
+[2.455367] (camera_driver) StdoutLine: {'line': b'running install_data\n'}
+[2.455951] (camera_driver) StdoutLine: {'line': b'copying resource/camera_driver -> /home/krist/sensor2_ws/install/camera_driver/share/ament_index/resource_index/packages\n'}
+[2.456542] (camera_driver) StdoutLine: {'line': b'copying package.xml -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver\n'}
+[2.457054] (camera_driver) StdoutLine: {'line': b'copying launch/camera_launch.py -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver/launch\n'}
+[2.457541] (camera_driver) StdoutLine: {'line': b'copying weights/rgb_best.pt -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver/weights\n'}
+[2.511726] (-) TimerEvent: {}
+[2.554603] (camera_driver) StdoutLine: {'line': b'copying weights/thermal_best.pt -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver/weights\n'}
+[2.611867] (-) TimerEvent: {}
+[2.644581] (camera_driver) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.686726] (camera_driver) StdoutLine: {'line': b"removing '/home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.687395] (camera_driver) StdoutLine: {'line': b'Copying ../../build/camera_driver/camera_driver.egg-info to /home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver-0.0.0-py3.10.egg-info\n'}
+[2.689437] (camera_driver) StdoutLine: {'line': b'running install_scripts\n'}
+[2.711932] (-) TimerEvent: {}
+[2.812408] (-) TimerEvent: {}
+[2.913100] (-) TimerEvent: {}
+[2.997275] (camera_driver) StdoutLine: {'line': b'Installing gst_node script to /home/krist/sensor2_ws/install/camera_driver/lib/camera_driver\n'}
+[2.998286] (camera_driver) StdoutLine: {'line': b"writing list of installed files to '/home/krist/sensor2_ws/build/camera_driver/install.log'\n"}
+[3.013281] (-) TimerEvent: {}
+[3.077236] (camera_driver) CommandEnded: {'returncode': 0}
+[3.112443] (camera_driver) JobEnded: {'identifier': 'camera_driver', 'rc': 0}
+[3.114239] (-) TimerEvent: {}
+[3.114499] (-) EventReactorShutdown: {}

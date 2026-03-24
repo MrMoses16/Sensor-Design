@@ -1,0 +1,28 @@
+[1.698s] Invoking command in '/home/krist/sensor2_ws/src/sensor_fusion': PYTHONPATH=/home/krist/sensor2_ws/build/sensor_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_fusion build --build-base /home/krist/sensor2_ws/build/sensor_fusion/build install --record /home/krist/sensor2_ws/build/sensor_fusion/install.log --single-version-externally-managed install_data
+[2.052s] /home/krist/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.053s]   warnings.warn(msg)
+[2.287s] running egg_info
+[2.325s] writing ../../build/sensor_fusion/sensor_fusion.egg-info/PKG-INFO
+[2.326s] writing dependency_links to ../../build/sensor_fusion/sensor_fusion.egg-info/dependency_links.txt
+[2.327s] writing entry points to ../../build/sensor_fusion/sensor_fusion.egg-info/entry_points.txt
+[2.327s] writing requirements to ../../build/sensor_fusion/sensor_fusion.egg-info/requires.txt
+[2.328s] writing top-level names to ../../build/sensor_fusion/sensor_fusion.egg-info/top_level.txt
+[2.409s] reading manifest file '../../build/sensor_fusion/sensor_fusion.egg-info/SOURCES.txt'
+[2.412s] writing manifest file '../../build/sensor_fusion/sensor_fusion.egg-info/SOURCES.txt'
+[2.412s] running build
+[2.412s] running build_py
+[2.413s] copying sensor_fusion/fusion_visualizer.py -> /home/krist/sensor2_ws/build/sensor_fusion/build/lib/sensor_fusion
+[2.413s] copying sensor_fusion/__init__.py -> /home/krist/sensor2_ws/build/sensor_fusion/build/lib/sensor_fusion
+[2.414s] running install
+[2.423s] running install_lib
+[2.464s] running install_data
+[2.464s] copying resource/sensor_fusion -> /home/krist/sensor2_ws/install/sensor_fusion/share/ament_index/resource_index/packages
+[2.465s] copying package.xml -> /home/krist/sensor2_ws/install/sensor_fusion/share/sensor_fusion
+[2.465s] copying launch/sensor_fusion.launch.py -> /home/krist/sensor2_ws/install/sensor_fusion/share/sensor_fusion/launch
+[2.465s] running install_egg_info
+[2.507s] removing '/home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion-0.0.0-py3.10.egg-info' (and everything under it)
+[2.507s] Copying ../../build/sensor_fusion/sensor_fusion.egg-info to /home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion-0.0.0-py3.10.egg-info
+[2.509s] running install_scripts
+[2.817s] Installing fusion_visualizer script to /home/krist/sensor2_ws/install/sensor_fusion/lib/sensor_fusion
+[2.818s] writing list of installed files to '/home/krist/sensor2_ws/build/sensor_fusion/install.log'
+[2.895s] Invoked command in '/home/krist/sensor2_ws/src/sensor_fusion' returned '0': PYTHONPATH=/home/krist/sensor2_ws/build/sensor_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_fusion build --build-base /home/krist/sensor2_ws/build/sensor_fusion/build install --record /home/krist/sensor2_ws/build/sensor_fusion/install.log --single-version-externally-managed install_data

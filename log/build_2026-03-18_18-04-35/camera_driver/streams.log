@@ -1,0 +1,63 @@
+[1.765s] Invoking command in '/home/krist/sensor2_ws/src/camera_driver': PYTHONPATH=/home/krist/sensor2_ws/build/camera_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_driver build --build-base /home/krist/sensor2_ws/build/camera_driver/build install --record /home/krist/sensor2_ws/build/camera_driver/install.log --install-scripts $base/lib/camera_driver --single-version-externally-managed install_data
+[2.087s] /home/krist/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[2.087s] !!
+[2.087s] 
+[2.087s]         ********************************************************************************
+[2.088s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.088s]         versions. Please use the underscore name 'script_dir' instead.
+[2.088s] 
+[2.088s]         This deprecation is overdue, please update your project and remove deprecated
+[2.088s]         calls to avoid build errors in the future.
+[2.088s] 
+[2.088s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.088s]         ********************************************************************************
+[2.088s] 
+[2.089s] !!
+[2.089s]   opt = self._enforce_underscore(opt, section)
+[2.127s] /home/krist/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.127s]   warnings.warn(msg)
+[2.203s] /home/krist/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.
+[2.203s] !!
+[2.203s] 
+[2.204s]         ********************************************************************************
+[2.204s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.204s]         versions. Please use the underscore name 'script_dir' instead.
+[2.204s]         (Affected: camera_driver).
+[2.204s] 
+[2.204s]         This deprecation is overdue, please update your project and remove deprecated
+[2.204s]         calls to avoid build errors in the future.
+[2.204s] 
+[2.204s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.205s]         ********************************************************************************
+[2.205s] 
+[2.205s] !!
+[2.205s]   opt = self._enforce_underscore(opt, section)
+[2.364s] running egg_info
+[2.402s] writing ../../build/camera_driver/camera_driver.egg-info/PKG-INFO
+[2.403s] writing dependency_links to ../../build/camera_driver/camera_driver.egg-info/dependency_links.txt
+[2.403s] writing entry points to ../../build/camera_driver/camera_driver.egg-info/entry_points.txt
+[2.404s] writing requirements to ../../build/camera_driver/camera_driver.egg-info/requires.txt
+[2.404s] writing top-level names to ../../build/camera_driver/camera_driver.egg-info/top_level.txt
+[2.487s] reading manifest file '../../build/camera_driver/camera_driver.egg-info/SOURCES.txt'
+[2.489s] writing manifest file '../../build/camera_driver/camera_driver.egg-info/SOURCES.txt'
+[2.490s] running build
+[2.490s] running build_py
+[2.490s] copying camera_driver/gst_node.py -> /home/krist/sensor2_ws/build/camera_driver/build/lib/camera_driver
+[2.491s] copying camera_driver/__init__.py -> /home/krist/sensor2_ws/build/camera_driver/build/lib/camera_driver
+[2.491s] running install
+[2.500s] running install_lib
+[2.540s] copying /home/krist/sensor2_ws/build/camera_driver/build/lib/camera_driver/gst_node.py -> /home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver
+[2.542s] byte-compiling /home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver/gst_node.py to gst_node.cpython-310.pyc
+[2.545s] running install_data
+[2.545s] copying resource/camera_driver -> /home/krist/sensor2_ws/install/camera_driver/share/ament_index/resource_index/packages
+[2.546s] copying package.xml -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver
+[2.547s] copying launch/camera_launch.py -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver/launch
+[2.547s] copying weights/rgb_best.pt -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver/weights
+[2.645s] copying weights/thermal_best.pt -> /home/krist/sensor2_ws/install/camera_driver/share/camera_driver/weights
+[2.735s] running install_egg_info
+[2.778s] removing '/home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver-0.0.0-py3.10.egg-info' (and everything under it)
+[2.779s] Copying ../../build/camera_driver/camera_driver.egg-info to /home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages/camera_driver-0.0.0-py3.10.egg-info
+[2.781s] running install_scripts
+[3.086s] Installing gst_node script to /home/krist/sensor2_ws/install/camera_driver/lib/camera_driver
+[3.087s] writing list of installed files to '/home/krist/sensor2_ws/build/camera_driver/install.log'
+[3.168s] Invoked command in '/home/krist/sensor2_ws/src/camera_driver' returned '0': PYTHONPATH=/home/krist/sensor2_ws/build/camera_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor2_ws/install/camera_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_driver build --build-base /home/krist/sensor2_ws/build/camera_driver/build install --record /home/krist/sensor2_ws/build/camera_driver/install.log --install-scripts $base/lib/camera_driver --single-version-externally-managed install_data

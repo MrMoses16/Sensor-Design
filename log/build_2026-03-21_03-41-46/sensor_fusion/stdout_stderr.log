@@ -1,0 +1,28 @@
+/home/krist/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/sensor_fusion/sensor_fusion.egg-info/PKG-INFO
+writing dependency_links to ../../build/sensor_fusion/sensor_fusion.egg-info/dependency_links.txt
+writing entry points to ../../build/sensor_fusion/sensor_fusion.egg-info/entry_points.txt
+writing requirements to ../../build/sensor_fusion/sensor_fusion.egg-info/requires.txt
+writing top-level names to ../../build/sensor_fusion/sensor_fusion.egg-info/top_level.txt
+reading manifest file '../../build/sensor_fusion/sensor_fusion.egg-info/SOURCES.txt'
+writing manifest file '../../build/sensor_fusion/sensor_fusion.egg-info/SOURCES.txt'
+running build
+running build_py
+copying sensor_fusion/fusion_visualizer.py -> /home/krist/sensor2_ws/build/sensor_fusion/build/lib/sensor_fusion
+copying sensor_fusion/__init__.py -> /home/krist/sensor2_ws/build/sensor_fusion/build/lib/sensor_fusion
+running install
+running install_lib
+copying /home/krist/sensor2_ws/build/sensor_fusion/build/lib/sensor_fusion/fusion_visualizer.py -> /home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion
+byte-compiling /home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion/fusion_visualizer.py to fusion_visualizer.cpython-310.pyc
+running install_data
+copying resource/sensor_fusion -> /home/krist/sensor2_ws/install/sensor_fusion/share/ament_index/resource_index/packages
+copying package.xml -> /home/krist/sensor2_ws/install/sensor_fusion/share/sensor_fusion
+copying launch/sensor_fusion.launch.py -> /home/krist/sensor2_ws/install/sensor_fusion/share/sensor_fusion/launch
+running install_egg_info
+removing '/home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/sensor_fusion/sensor_fusion.egg-info to /home/krist/sensor2_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion-0.0.0-py3.10.egg-info
+running install_scripts
+Installing fusion_visualizer script to /home/krist/sensor2_ws/install/sensor_fusion/lib/sensor_fusion
+writing list of installed files to '/home/krist/sensor2_ws/build/sensor_fusion/install.log'

@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: lidar_driver
+Version: 0.0.0
+Summary: Mini fence obstacle avoidance for RPLidar and Cube Black
+Maintainer: Kristopher T
+Maintainer-email: 02kmtellez@gmail.com
+License: Apache-2.0
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000759] (-) JobUnselected: {'identifier': 'camera_driver'}
+[0.001069] (-) JobUnselected: {'identifier': 'lidar_driver'}
+[0.001179] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.001577] (-) EventReactorShutdown: {}
