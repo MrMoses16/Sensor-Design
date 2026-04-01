@@ -5,15 +5,24 @@ from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import AnyLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+from launch.conditions import IfCondition
 
 def generate_launch_description():
-    # 1. Declare the user input argument for the camera type
+    # 1a. Declare the user input argument for the camera type
     camera_type_arg = DeclareLaunchArgument(
         'camera_type',
         default_value='rgb', # Defaults to rgb if the user doesn't specify
         description='Type of camera to launch: "rgb" or "thermal"'
     )
     camera_type_config = LaunchConfiguration('camera_type')
+
+    # 1b. Declare the user input argument for the camera usage
+    use_camera_arg = DeclareLaunchArgument(
+        'use_camera',
+        default_value='true',
+        description='Set to false to run the drone with LiDAR only'
+    )
+    use_camera_config = LaunchConfiguration('use_camera')
 
     # 2. MAVROS: Connect Orin to Cube Black
     # This mimics running `ros2 launch mavros apm.launch fcu_url:=/dev/ttyACM0:57600`
@@ -57,6 +66,7 @@ def generate_launch_description():
         name='gst_yolo_node',
         output='screen',
         # Pass the launch argument into the node as a ROS parameter
+        condition=IfCondition(use_camera_config), 
         parameters=[{'camera_type': camera_type_config}]
     )
 
@@ -65,11 +75,13 @@ def generate_launch_description():
         package='sensor_fusion',
         executable='fusion_visualizer',
         name='fusion_node',
-        output='screen'
+        output='screen',
+        condition=IfCondition(use_camera_config)
     )
 
     return LaunchDescription([
         camera_type_arg,
+        use_camera_arg,
         mavros_launch,
         sllidar_hardware_node,
         mini_fence_math_node,
