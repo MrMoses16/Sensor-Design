@@ -25,9 +25,9 @@ class MiniFenceNode(Node):
 
     def scan_callback(self, msg):
         # Initialize 8 sectors to infinity
-        # Sectors align with standard drone coordinates:
-        # 0: Forward (0°), 1: Forward-Left (45°), 2: Left (90°), 3: Back-Left (135°)
-        # 4: Back (180°), 5: Back-Right (225°), 6: Right (270°), 7: Forward-Right (315°)
+        # Updated to match Flight Controller Clockwise (FRD) coordinates:
+        # 0: Forward (0°), 1: Forward-Right (45°), 2: Right (90°), 3: Back-Right (135°)
+        # 4: Back (180°), 5: Back-Left (225°), 6: Left (270°), 7: Forward-Left (315°)
         min_distances = [float('inf')] * 8
 
         # Iterate through all raw LiDAR points
@@ -36,12 +36,17 @@ class MiniFenceNode(Node):
             if math.isinf(r) or math.isnan(r) or r < msg.range_min or r > msg.range_max:
                 continue
 
-            # Calculate angle in degrees
+            # Calculate the original raw angle in degrees
             angle_rad = msg.angle_min + i * msg.angle_increment
-            angle_deg = math.degrees(angle_rad)
+            raw_angle_deg = math.degrees(angle_rad)
 
-            # Normalize angle to [0, 360)
-            angle_deg = angle_deg % 360.0
+            # --- THE CLOCKWISE FIX ---
+            # The LiDAR spins clockwise, and MAVLink/ArduPilot wants clockwise.
+            # We ONLY add 180.0 to rotate the "rear-facing" 0° point to the front.
+            corrected_angle_deg = raw_angle_deg + 180.0
+
+            # Normalize angle to strictly fall within [0, 360)
+            angle_deg = corrected_angle_deg % 360.0
 
             # Map the angle to one of the 8 sectors
             # Offset by +22.5° so Sector 0 is perfectly centered forward (-22.5° to 22.5°)
