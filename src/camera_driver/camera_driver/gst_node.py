@@ -78,10 +78,10 @@ class GstYoloNode(Node):
         if camera_type == 'thermal':
             # Using v4l2src for Boston Interface RHP-BOS-VPC3-IF thermal camera
             self.pipeline_str = (
-                "v4l2src device=/dev/video0 ! "
+                "v4l2src device=/dev/video0 ! " #extra-controls=\"s,exposure_auto=1,exposure_absolute=500,brightness=128\" ! "
                 "video/x-raw, format=NV12, width=640, height=512, framerate=60/1 ! "
                 "videorate ! "
-                "video/x-raw, framerate=12/1 ! "
+                "video/x-raw, framerate=10/1 ! "
                 "nvvidconv ! "
                 "video/x-raw, format=BGRx ! "
                 "videoconvert ! "
@@ -91,7 +91,8 @@ class GstYoloNode(Node):
         else:
             # Using v4l2src for eMeet Webcam C970L 
             self.pipeline_str = (
-                "v4l2src device=/dev/video0 ! "
+                "v4l2src device=/dev/video0 extra-controls=\"s,exposure_auto=1,exposure_absolute=5,gain=0,brightness=128\" ! "
+                
                 "video/x-raw, format=YUY2, width=640, height=480, framerate=30/1 ! "
                 "videorate ! "
                 "video/x-raw, framerate=15/1 ! "
