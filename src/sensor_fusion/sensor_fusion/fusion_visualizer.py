@@ -11,7 +11,7 @@ class FusionVisualizer(Node):
         super().__init__('fusion_visualizer')
         self.bridge = CvBridge()
         
-        self.laptop_ip = "192.168.206.161"
+        self.laptop_ip = "192.168.0.93"
         self.port = 8554
         
         gst_out = (
@@ -37,9 +37,9 @@ class FusionVisualizer(Node):
         self.latest_scan = msg
 
     def image_cb(self, image_msg):
-        if self.latest_scan is None:
-            self.get_logger().info("Waiting for first Lidar scan...", once=True)
-            return
+        #if self.latest_scan is None:
+        #   self.get_logger().info("Waiting for first Lidar scan...", once=True)
+        #    return
 
         try:
             # 1. Convert ROS Image to OpenCV BGR
@@ -47,18 +47,18 @@ class FusionVisualizer(Node):
             frame = cv2.resize(frame, (640, 480))
 
             # 2. Draw Radar HUD
-            overlay = frame.copy()
-            radar_center = (540, 380)
-            cv2.circle(overlay, radar_center, 80, (0, 0, 0), -1)
-            cv2.addWeighted(overlay, 0.5, frame, 0.5, 0, frame)
+            #overlay = frame.copy()
+            #radar_center = (540, 380)
+            #cv2.circle(overlay, radar_center, 80, (0, 0, 0), -1)
+            #cv2.addWeighted(overlay, 0.5, frame, 0.5, 0, frame)
 
             # 3. Project Lidar Points (using self.latest_scan)
-            for i, dist in enumerate(self.latest_scan.ranges):
-                if self.latest_scan.range_min < dist < 5.0:
-                    angle = self.latest_scan.angle_min + (i * self.latest_scan.angle_increment)
-                    x = int(radar_center[0] + (dist * np.cos(angle) * 15))
-                    y = int(radar_center[1] - (dist * np.sin(angle) * 15))
-                    cv2.circle(frame, (x, y), 2, (0, 255, 0), -1)
+            #for i, dist in enumerate(self.latest_scan.ranges):
+            #    if self.latest_scan.range_min < dist < 5.0:
+            #        angle = self.latest_scan.angle_min + (i * self.latest_scan.angle_increment)
+            #        x = int(radar_center[0] + (dist * np.cos(angle) * 15))
+            #        y = int(radar_center[1] - (dist * np.sin(angle) * 15))
+            #        cv2.circle(frame, (x, y), 2, (0, 255, 0), -1)
 
             # 4. Stream the "Fused" frame
             self.out.write(frame)

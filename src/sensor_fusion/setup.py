@@ -11,19 +11,17 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),  
         ('share/' + package_name, ['package.xml']),
-        # ADD THIS LINE: Install all launch files
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Drone Developer',
-    maintainer_email='dev@drone.local',
+    maintainer='krist',
+    maintainer_email='02kmtellez@gmail.com',
     description='Central sensor fusion and launch hub',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # Your existing executables should already be here
             'fusion_visualizer = sensor_fusion.fusion_visualizer:main',
         ],
     },
