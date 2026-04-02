@@ -1,2 +1,0 @@
-[console_scripts]
-fusion_visualizer = sensor_fusion.fusion_visualizer:main
