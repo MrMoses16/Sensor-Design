@@ -40,13 +40,8 @@ class MiniFenceNode(Node):
             angle_rad = msg.angle_min + i * msg.angle_increment
             raw_angle_deg = math.degrees(angle_rad)
 
-            # --- THE CLOCKWISE FIX ---
-            # The LiDAR spins clockwise, and MAVLink/ArduPilot wants clockwise.
-            # We ONLY add 180.0 to rotate the "rear-facing" 0° point to the front.
-            corrected_angle_deg = raw_angle_deg
-
             # Normalize angle to strictly fall within [0, 360)
-            angle_deg = corrected_angle_deg % 360.0
+            angle_deg = raw_angle_deg % 360.0
 
             # Map the angle to one of the 8 sectors
             # Offset by +22.5° so Sector 0 is perfectly centered forward (-22.5° to 22.5°)
