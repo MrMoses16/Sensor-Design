@@ -58,25 +58,25 @@ class MiniFenceNode(Node):
                     sector_index = 4
                 # 22.5 - 67.5
                 case 1:
-                    sector_index = 7
+                    sector_index = 3
                 # 67.5 - 112.5
                 case 2:
-                    sector_index = 6
+                    sector_index = 2
                 # 112.5 - 157.5
                 case 3:
-                    sector_index = 5
+                    sector_index = 1
                 # 157.5 - 202.5
                 case 4:
                     sector_index = 0
                 # 202.5 - 247.5
                 case 5:
-                    sector_index = 3
+                    sector_index = 7
                 # 247.5 - 292.5
                 case 6:
-                    sector_index = 2
+                    sector_index = 6
                 # 292.5 - 337.5
                 case 7:
-                    sector_index = 1
+                    sector_index = 5
                 # Default/Catch-all
                 case _:
                     print("Error")
