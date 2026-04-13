@@ -43,22 +43,23 @@ class GstYoloNode(Node):
             qos_profile_sensor_data
         )
 
-        # --- NEW: Phase 1 JSON Data Storage ---
+        # JSON Data Storage
         self.detections_log = []
         self.detection_id_counter = 0
         self.last_log_time = 0.0
-        self.cooldown_seconds = 2.0 # Wait 2 seconds before logging another hit
-        # --------------------------------------
-
-        # 3. Declare the parameter with a default value
+        
+        # Wait 2 seconds before logging another hit
+        self.cooldown_seconds = 2.0 
+        
+        # Declare the parameter with a default value
         self.declare_parameter('camera_type', 'rgb')
-        camera_type = self.get_parameter('camera_type').get_parameter_value().string_value
+        self.camera_type = self.get_parameter('camera_type').get_parameter_value().string_value
 
-        # 4. Load YOLO Weights using Torch Hub
+        # Load YOLO Weights using Torch Hub
         try:
             package_share = get_package_share_directory('camera_driver')
-
-            if camera_type == 'thermal':
+            
+            if self.camera_type == 'thermal':
                 weights_path = os.path.join(package_share, 'weights', 'thermal_best.pt')
             else:
                 weights_path = os.path.join(package_share, 'weights', 'rgb_best.pt')
@@ -133,11 +134,11 @@ class GstYoloNode(Node):
             buffer=map_info.data
         )
 
-        # --- YOLO INFERENCE ---
+        # YOLO INFERENCE
         results = self.model(frame)
         annotated_frame = frame.copy()
 
-        # --- NEW: Variables to track data for JSON ---
+        # Variables to track data for JSON
         people_count = 0
         highest_confidence = 0.0
 
@@ -151,14 +152,14 @@ class GstYoloNode(Node):
                     highest_confidence = float(conf)
 
             class_name = self.model.names[int(cls)]
-            label = f"{class_name}: {self.current_lat:.5f}, {self.current_lon:.5f}"
+            label = f"{conf}: {self.current_lat:.5f}, {self.current_lon:.5f}"
             
             cv2.rectangle(annotated_frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
             (w, h), _ = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
             cv2.rectangle(annotated_frame, (x1, y1 - 20), (x1 + w, y1), (0, 255, 0), -1)
             cv2.putText(annotated_frame, label, (x1, y1 - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1)
 
-        # --- NEW: JSON Logging Logic ---
+        # JSON Logging Logic
         if people_count > 0 and self.current_lat != 0.0:
             current_time = time.time()
             if (current_time - self.last_log_time) > self.cooldown_seconds:
@@ -166,7 +167,7 @@ class GstYoloNode(Node):
                     "id": self.detection_id_counter,
                     "lat": self.current_lat,
                     "lon": self.current_lon,
-                    "sensor_type": "RGB",  # You could dynamically link this to camera_type if needed
+                    "sensor_type": self.camera_type.upper() 
                     "confidence": round(highest_confidence, 2),
                     "people_count": people_count
                 }
@@ -175,7 +176,7 @@ class GstYoloNode(Node):
                 self.last_log_time = current_time
                 self.get_logger().info(f"Target Logged in JSON! Count: {people_count}, Conf: {highest_confidence:.2f}")
 
-        # --- PUBLISH TO ROS ---
+        # PUBLISH TO ROS
         try:
             ros_image = self.bridge.cv2_to_imgmsg(annotated_frame, encoding="bgr8")
             ros_image.header.stamp = self.get_clock().now().to_msg()
