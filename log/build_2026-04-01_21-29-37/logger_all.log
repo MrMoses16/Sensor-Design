@@ -1,0 +1,292 @@
+[0.291s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.292s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff882291e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff88342170>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff88342170>>, mixin_verb=('build',))
+[0.774s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.775s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/krist/sensor_ws'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.810s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'ignore'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'ignore_ament_install'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['colcon_pkg']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'colcon_pkg'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['colcon_meta']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'colcon_meta'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extensions ['ros']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_driver) by extension 'ros'
+[0.823s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_driver' with type 'ros.ament_python' and name 'camera_driver'
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extension 'ignore'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extension 'ignore_ament_install'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extensions ['colcon_pkg']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extension 'colcon_pkg'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extensions ['colcon_meta']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extension 'colcon_meta'
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extensions ['ros']
+[0.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/lidar_driver) by extension 'ros'
+[0.828s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lidar_driver' with type 'ros.ament_python' and name 'lidar_driver'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extensions ['ignore', 'ignore_ament_install']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extension 'ignore'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extension 'ignore_ament_install'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extensions ['colcon_pkg']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extension 'colcon_pkg'
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extensions ['colcon_meta']
+[0.829s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extension 'colcon_meta'
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extensions ['ros']
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_fusion) by extension 'ros'
+[0.831s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_fusion' with type 'ros.ament_python' and name 'sensor_fusion'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[0.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[0.835s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.835s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.950s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.953s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.040s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_args' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_target' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.041s] Level 5:colcon.colcon_core.verb:set package 'camera_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.041s] DEBUG:colcon.colcon_core.verb:Building package 'camera_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/krist/sensor_ws/build/camera_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/krist/sensor_ws/install/camera_driver', 'merge_install': False, 'path': '/home/krist/sensor_ws/src/camera_driver', 'symlink_install': False, 'test_result_base': None}
+[1.042s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'cmake_args' from command line to 'None'
+[1.042s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'cmake_target' from command line to 'None'
+[1.042s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.042s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.043s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.043s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.043s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.043s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.043s] Level 5:colcon.colcon_core.verb:set package 'lidar_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.043s] DEBUG:colcon.colcon_core.verb:Building package 'lidar_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/krist/sensor_ws/build/lidar_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/krist/sensor_ws/install/lidar_driver', 'merge_install': False, 'path': '/home/krist/sensor_ws/src/lidar_driver', 'symlink_install': False, 'test_result_base': None}
+[1.043s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'cmake_args' from command line to 'None'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'cmake_target' from command line to 'None'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'cmake_clean_cache' from command line to 'False'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'cmake_clean_first' from command line to 'False'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'cmake_force_configure' from command line to 'False'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'ament_cmake_args' from command line to 'None'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'catkin_cmake_args' from command line to 'None'
+[1.044s] Level 5:colcon.colcon_core.verb:set package 'sensor_fusion' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.044s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_fusion' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/krist/sensor_ws/build/sensor_fusion', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/krist/sensor_ws/install/sensor_fusion', 'merge_install': False, 'path': '/home/krist/sensor_ws/src/sensor_fusion', 'symlink_install': False, 'test_result_base': None}
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.045s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.045s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/krist/sensor_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/krist/sensor_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/krist/sensor_ws/src/sllidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[1.046s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.050s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.050s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/krist/sensor_ws/src/camera_driver' with build type 'ament_python'
+[1.051s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_driver', 'ament_prefix_path')
+[1.056s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/hook/ament_prefix_path.ps1'
+[1.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/hook/ament_prefix_path.dsv'
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/hook/ament_prefix_path.sh'
+[1.062s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.062s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.069s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/krist/sensor_ws/src/lidar_driver' with build type 'ament_python'
+[1.069s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_driver', 'ament_prefix_path')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/hook/ament_prefix_path.ps1'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/hook/ament_prefix_path.dsv'
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/hook/ament_prefix_path.sh'
+[1.074s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.074s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.079s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/krist/sensor_ws/src/sensor_fusion' with build type 'ament_python'
+[1.080s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion', 'ament_prefix_path')
+[1.081s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/hook/ament_prefix_path.ps1'
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/hook/ament_prefix_path.dsv'
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/hook/ament_prefix_path.sh'
+[1.085s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.085s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.091s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/krist/sensor_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[1.091s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/krist/sensor_ws/src/sllidar_ros2'
+[1.092s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.092s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.750s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/krist/sensor_ws/src/camera_driver'
+[1.751s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.752s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.399s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/krist/sensor_ws/src/lidar_driver'
+[2.400s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.401s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.061s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/krist/sensor_ws/src/sensor_fusion'
+[3.063s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.063s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/krist/sensor_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/krist/sensor_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/krist/sensor_ws/install/sllidar_ros2
+[4.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/krist/sensor_ws/src/camera_driver': PYTHONPATH=/home/krist/sensor_ws/build/camera_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor_ws/install/camera_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_driver build --build-base /home/krist/sensor_ws/build/camera_driver/build install --record /home/krist/sensor_ws/build/camera_driver/install.log --install-scripts $base/lib/camera_driver --single-version-externally-managed install_data
+[4.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/krist/sensor_ws/src/lidar_driver': PYTHONPATH=/home/krist/sensor_ws/build/lidar_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor_ws/install/lidar_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_driver build --build-base /home/krist/sensor_ws/build/lidar_driver/build install --record /home/krist/sensor_ws/build/lidar_driver/install.log --single-version-externally-managed install_data
+[4.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/krist/sensor_ws/src/sensor_fusion': PYTHONPATH=/home/krist/sensor_ws/build/sensor_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_fusion build --build-base /home/krist/sensor_ws/build/sensor_fusion/build install --record /home/krist/sensor_ws/build/sensor_fusion/install.log --single-version-externally-managed install_data
+[5.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/krist/sensor_ws/src/lidar_driver' returned '0': PYTHONPATH=/home/krist/sensor_ws/build/lidar_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor_ws/install/lidar_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/lidar_driver build --build-base /home/krist/sensor_ws/build/lidar_driver/build install --record /home/krist/sensor_ws/build/lidar_driver/install.log --single-version-externally-managed install_data
+[5.067s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/lidar_driver' for CMake module files
+[5.068s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/lidar_driver' for CMake config files
+[5.070s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/lidar_driver/lib'
+[5.071s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/lidar_driver/bin'
+[5.071s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/lidar_driver/lib/pkgconfig/lidar_driver.pc'
+[5.072s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/lidar_driver/lib/python3.10/site-packages'
+[5.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('lidar_driver', 'pythonpath')
+[5.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/hook/pythonpath.ps1'
+[5.075s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/hook/pythonpath.dsv'
+[5.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/hook/pythonpath.sh'
+[5.078s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/lidar_driver/bin'
+[5.078s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lidar_driver)
+[5.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/package.ps1'
+[5.082s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/package.dsv'
+[5.083s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/package.sh'
+[5.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/package.bash'
+[5.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/lidar_driver/share/lidar_driver/package.zsh'
+[5.089s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/krist/sensor_ws/install/lidar_driver/share/colcon-core/packages/lidar_driver)
+[5.139s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sensor_fusion' for CMake module files
+[5.142s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sensor_fusion' for CMake config files
+[5.144s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sensor_fusion/lib'
+[5.145s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sensor_fusion/bin'
+[5.145s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sensor_fusion/lib/pkgconfig/sensor_fusion.pc'
+[5.146s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages'
+[5.146s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor_fusion', 'pythonpath')
+[5.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/hook/pythonpath.ps1'
+[5.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/krist/sensor_ws/src/sensor_fusion' returned '0': PYTHONPATH=/home/krist/sensor_ws/build/sensor_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sensor_fusion build --build-base /home/krist/sensor_ws/build/sensor_fusion/build install --record /home/krist/sensor_ws/build/sensor_fusion/install.log --single-version-externally-managed install_data
+[5.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/hook/pythonpath.dsv'
+[5.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/hook/pythonpath.sh'
+[5.154s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sensor_fusion/bin'
+[5.154s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor_fusion)
+[5.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/package.ps1'
+[5.158s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/package.dsv'
+[5.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/package.sh'
+[5.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/package.bash'
+[5.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/package.zsh'
+[5.163s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/krist/sensor_ws/install/sensor_fusion/share/colcon-core/packages/sensor_fusion)
+[6.033s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/camera_driver' for CMake module files
+[6.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/krist/sensor_ws/src/camera_driver' returned '0': PYTHONPATH=/home/krist/sensor_ws/build/camera_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor_ws/install/camera_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_driver build --build-base /home/krist/sensor_ws/build/camera_driver/build install --record /home/krist/sensor_ws/build/camera_driver/install.log --install-scripts $base/lib/camera_driver --single-version-externally-managed install_data
+[6.036s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/camera_driver' for CMake config files
+[6.038s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/camera_driver/lib'
+[6.039s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/camera_driver/bin'
+[6.039s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/camera_driver/lib/pkgconfig/camera_driver.pc'
+[6.040s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/camera_driver/lib/python3.10/site-packages'
+[6.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_driver', 'pythonpath')
+[6.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/hook/pythonpath.ps1'
+[6.043s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/hook/pythonpath.dsv'
+[6.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/hook/pythonpath.sh'
+[6.047s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/camera_driver/bin'
+[6.047s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_driver)
+[6.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/package.ps1'
+[6.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/package.dsv'
+[6.052s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/package.sh'
+[6.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/package.bash'
+[6.055s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/camera_driver/share/camera_driver/package.zsh'
+[6.056s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/krist/sensor_ws/install/camera_driver/share/colcon-core/packages/camera_driver)
+[7.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/krist/sensor_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/krist/sensor_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/krist/sensor_ws/install/sllidar_ros2
+[7.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/krist/sensor_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/krist/sensor_ws/build/sllidar_ros2 -- -j6 -l6
+[35.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/krist/sensor_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/krist/sensor_ws/build/sllidar_ros2 -- -j6 -l6
+[35.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/krist/sensor_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/krist/sensor_ws/build/sllidar_ros2
+[35.223s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[35.224s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2' for CMake module files
+[35.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/krist/sensor_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/krist/sensor_ws/build/sllidar_ros2
+[35.227s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2' for CMake config files
+[35.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[35.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[35.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[35.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[35.234s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/lib'
+[35.235s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/bin'
+[35.235s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[35.236s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[35.237s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/bin'
+[35.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[35.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[35.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[35.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[35.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[35.246s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/krist/sensor_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[35.249s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[35.249s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2' for CMake module files
+[35.251s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2' for CMake config files
+[35.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[35.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[35.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[35.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[35.258s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/lib'
+[35.258s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/bin'
+[35.259s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[35.259s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[35.261s] Level 1:colcon.colcon_core.environment:checking '/home/krist/sensor_ws/install/sllidar_ros2/bin'
+[35.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[35.264s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[35.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[35.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[35.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/krist/sensor_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[35.271s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/krist/sensor_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[35.273s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[35.274s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[35.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[35.275s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[35.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[35.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[35.323s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[35.405s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[35.406s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/krist/sensor_ws/install/local_setup.ps1'
+[35.411s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/krist/sensor_ws/install/_local_setup_util_ps1.py'
+[35.417s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/krist/sensor_ws/install/setup.ps1'
+[35.422s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/krist/sensor_ws/install/local_setup.sh'
+[35.424s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/krist/sensor_ws/install/_local_setup_util_sh.py'
+[35.427s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/krist/sensor_ws/install/setup.sh'
+[35.432s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/krist/sensor_ws/install/local_setup.bash'
+[35.434s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/krist/sensor_ws/install/setup.bash'
+[35.438s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/krist/sensor_ws/install/local_setup.zsh'
+[35.440s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/krist/sensor_ws/install/setup.zsh'

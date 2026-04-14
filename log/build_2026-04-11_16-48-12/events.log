@@ -1,0 +1,58 @@
+[0.000000] (-) TimerEvent: {}
+[0.000736] (-) JobUnselected: {'identifier': 'camera_driver'}
+[0.001083] (-) JobUnselected: {'identifier': 'lidar_driver'}
+[0.001175] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.001253] (sensor_fusion) JobQueued: {'identifier': 'sensor_fusion', 'dependencies': OrderedDict()}
+[0.001369] (sensor_fusion) JobStarted: {'identifier': 'sensor_fusion'}
+[0.097707] (-) TimerEvent: {}
+[0.198514] (-) TimerEvent: {}
+[0.299478] (-) TimerEvent: {}
+[0.400380] (-) TimerEvent: {}
+[0.501270] (-) TimerEvent: {}
+[0.602141] (-) TimerEvent: {}
+[0.702932] (-) TimerEvent: {}
+[0.803666] (-) TimerEvent: {}
+[0.904291] (-) TimerEvent: {}
+[1.005013] (-) TimerEvent: {}
+[1.105788] (-) TimerEvent: {}
+[1.206202] (-) TimerEvent: {}
+[1.306572] (-) TimerEvent: {}
+[1.406945] (-) TimerEvent: {}
+[1.507347] (-) TimerEvent: {}
+[1.607890] (-) TimerEvent: {}
+[1.636547] (sensor_fusion) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/sensor_fusion', 'build', '--build-base', '/home/krist/sensor_ws/build/sensor_fusion/build', 'install', '--record', '/home/krist/sensor_ws/build/sensor_fusion/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/krist/sensor_ws/src/sensor_fusion', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'krist', 'SSH_CLIENT': '192.168.206.161 64659 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/krist', 'OLDPWD': '/home/krist', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'krist', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/krist/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/krist/sensor_ws/build/sensor_fusion', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.206.161 64659 192.168.206.174 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/krist/sensor_ws/build/sensor_fusion/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[1.708032] (-) TimerEvent: {}
+[1.808874] (-) TimerEvent: {}
+[1.910135] (-) TimerEvent: {}
+[2.011006] (-) TimerEvent: {}
+[2.111816] (-) TimerEvent: {}
+[2.212506] (-) TimerEvent: {}
+[2.228161] (sensor_fusion) StdoutLine: {'line': b'running egg_info\n'}
+[2.229941] (sensor_fusion) StdoutLine: {'line': b'writing ../../build/sensor_fusion/sensor_fusion.egg-info/PKG-INFO\n'}
+[2.232555] (sensor_fusion) StdoutLine: {'line': b'writing dependency_links to ../../build/sensor_fusion/sensor_fusion.egg-info/dependency_links.txt\n'}
+[2.233021] (sensor_fusion) StdoutLine: {'line': b'writing entry points to ../../build/sensor_fusion/sensor_fusion.egg-info/entry_points.txt\n'}
+[2.233457] (sensor_fusion) StdoutLine: {'line': b'writing requirements to ../../build/sensor_fusion/sensor_fusion.egg-info/requires.txt\n'}
+[2.233692] (sensor_fusion) StdoutLine: {'line': b'writing top-level names to ../../build/sensor_fusion/sensor_fusion.egg-info/top_level.txt\n'}
+[2.238267] (sensor_fusion) StdoutLine: {'line': b"reading manifest file '../../build/sensor_fusion/sensor_fusion.egg-info/SOURCES.txt'\n"}
+[2.240577] (sensor_fusion) StdoutLine: {'line': b"writing manifest file '../../build/sensor_fusion/sensor_fusion.egg-info/SOURCES.txt'\n"}
+[2.240869] (sensor_fusion) StdoutLine: {'line': b'running build\n'}
+[2.241090] (sensor_fusion) StdoutLine: {'line': b'running build_py\n'}
+[2.243070] (sensor_fusion) StdoutLine: {'line': b'copying sensor_fusion/fusion_visualizer.py -> /home/krist/sensor_ws/build/sensor_fusion/build/lib/sensor_fusion\n'}
+[2.243812] (sensor_fusion) StdoutLine: {'line': b'running install\n'}
+[2.244631] (sensor_fusion) StdoutLine: {'line': b'running install_lib\n'}
+[2.246699] (sensor_fusion) StdoutLine: {'line': b'copying /home/krist/sensor_ws/build/sensor_fusion/build/lib/sensor_fusion/fusion_visualizer.py -> /home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion\n'}
+[2.248843] (sensor_fusion) StdoutLine: {'line': b'byte-compiling /home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion/fusion_visualizer.py to fusion_visualizer.cpython-310.pyc\n'}
+[2.250731] (sensor_fusion) StdoutLine: {'line': b'running install_data\n'}
+[2.252873] (sensor_fusion) StdoutLine: {'line': b'copying package.xml -> /home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion\n'}
+[2.253581] (sensor_fusion) StdoutLine: {'line': b'copying launch/sensor_fusion.launch.py -> /home/krist/sensor_ws/install/sensor_fusion/share/sensor_fusion/launch\n'}
+[2.253812] (sensor_fusion) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.257989] (sensor_fusion) StdoutLine: {'line': b"removing '/home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.258787] (sensor_fusion) StdoutLine: {'line': b'Copying ../../build/sensor_fusion/sensor_fusion.egg-info to /home/krist/sensor_ws/install/sensor_fusion/lib/python3.10/site-packages/sensor_fusion-0.0.0-py3.10.egg-info\n'}
+[2.261504] (sensor_fusion) StdoutLine: {'line': b'running install_scripts\n'}
+[2.310610] (sensor_fusion) StdoutLine: {'line': b'Installing fusion_visualizer script to /home/krist/sensor_ws/install/sensor_fusion/lib/sensor_fusion\n'}
+[2.312524] (sensor_fusion) StdoutLine: {'line': b"writing list of installed files to '/home/krist/sensor_ws/build/sensor_fusion/install.log'\n"}
+[2.312710] (-) TimerEvent: {}
+[2.413554] (-) TimerEvent: {}
+[2.416867] (sensor_fusion) CommandEnded: {'returncode': 0}
+[2.490476] (sensor_fusion) JobEnded: {'identifier': 'sensor_fusion', 'rc': 0}
+[2.494268] (-) EventReactorShutdown: {}
