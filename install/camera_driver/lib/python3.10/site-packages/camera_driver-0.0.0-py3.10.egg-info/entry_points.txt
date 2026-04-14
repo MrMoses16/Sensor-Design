@@ -1,2 +1,0 @@
-[console_scripts]
-gst_node = camera_driver.gst_node:main

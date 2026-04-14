@@ -1,6 +1,0 @@
-Invoking command in '/home/krist/sensor_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/krist/sensor_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/krist/sensor_ws/install/sllidar_ros2
-Invoked command in '/home/krist/sensor_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/krist/sensor_ws/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/krist/sensor_ws/install/sllidar_ros2
-Invoking command in '/home/krist/sensor_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/krist/sensor_ws/build/sllidar_ros2 -- -j6 -l6
-Invoked command in '/home/krist/sensor_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/krist/sensor_ws/build/sllidar_ros2 -- -j6 -l6
-Invoking command in '/home/krist/sensor_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/krist/sensor_ws/build/sllidar_ros2
-Invoked command in '/home/krist/sensor_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/krist/sensor_ws/build/sllidar_ros2
