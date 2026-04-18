@@ -38,7 +38,10 @@ def generate_launch_description():
         AnyLaunchDescriptionSource(
             os.path.join(get_package_share_directory('mavros'), 'launch', 'apm.launch')
         ),
-        launch_arguments={'fcu_url': '/dev/ttyACM0:57600'}.items()
+        launch_arguments={
+            'fcu_url': '///dev/ttyACM0:57600',
+            'tgt_system': '3'
+        }.items()
     )
 
     # 3a. RPLidar Motor Driver (Hardware)
@@ -94,7 +97,7 @@ def generate_launch_description():
         camera_type_arg,
         use_camera_arg,
         camera_node_arg,
-        #mavros_launch,
+        mavros_launch,
         #sllidar_hardware_node,
         #mini_fence_math_node,
         camera_node,
