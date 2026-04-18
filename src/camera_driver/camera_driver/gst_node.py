@@ -46,14 +46,15 @@ class UnifiedCameraNode(Node):
         self.last_log_time = 0.0
         self.cooldown_seconds = 2.0 
 
+        self.gps_sub = self.create_subscription(
+            NavSatFix,
+            '/mavros/global_position/raw/fix',
+            self.gps_callback,
+            qos_profile_sensor_data
+        )
+
         if self.camera_node_mode == 'surveyor':
-            self.get_logger().info("🚀 MODE: SURVEYOR - GPS Logging Enabled.")
-            self.gps_sub = self.create_subscription(
-                NavSatFix,
-                '/mavros/global_position/raw/fix',
-                self.gps_callback,
-                qos_profile_sensor_data
-            )
+            self.get_logger().info("MODE: SURVEYOR - GPS Logging Enabled.")
         else:
             self.get_logger().info("MODE: DRONE - Streaming Only (Logging Disabled).")
 
@@ -95,7 +96,7 @@ class UnifiedCameraNode(Node):
         else:
             # Pipeline for RGB Camera
             self.pipeline_str = (
-                "v4l2src device=/dev/video0 extra-controls=\"s,exposure_auto=1,exposure_absolute=1,gain=0,brightness=128\" ! "
+                "v4l2src device=/dev/video0 ! " #extra-controls=\"s,exposure_auto=1,exposure_absolute=5,gain=0,brightness=60\" ! "
                 "video/x-raw, format=YUY2, width=640, height=480, framerate=30/1 ! "
                 "videorate ! video/x-raw, framerate=15/1 ! "
                 "nvvidconv ! video/x-raw, format=BGRx ! "
